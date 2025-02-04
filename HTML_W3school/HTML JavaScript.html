@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lưu nhật tung-2121051214</title>
+  </head>
+  <body>
+    <h1>My First JavaScript</h1>
+
+    <p id="demo">lưu nhật tung-2121051214</p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow";
+      }
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <h2>Use JavaScript to Change Text</h2>
+    <p>
+      This example writes "Hello JavaScript!" into an HTML element with
+      id="demo":
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = "lưu nhật tung-2121051214";
+    </script>
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "pic_bulboff.gif";
+        } else {
+          pic = "pic_bulbon.gif";
+        }
+        document.getElementById("myImage").src = pic;
+      }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180" />
+
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+  </body>
+</html>
