@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>luunhattung-2121051214</title>
+</head>
+<html>
+  <body>
+    <h2>The form target attribute</h2>
+
+    <p>
+      When submitting this form, the result will be opened in a new browser tab:
+    </p>
+
+    <form action="/action_page.php" target="_blank">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>The method Attribute</h2>
+
+    <p>This form will be submitted using the GET method:</p>
+
+    <form action="/action_page.php" target="_blank" method="get">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      After you submit, notice that the form values is visible in the address
+      bar of the new browser tab.
+    </p>
+    <p>
+      The novalidate attribute indicates that the form input is not to be
+      validated on submit:
+    </p>
+
+    <form action="/action_page.php" novalidate>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
