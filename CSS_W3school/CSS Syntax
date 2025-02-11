@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>luunhattung-212121051214</p>
+    <p>luunhattung-212121051214</p>
+    <p>luunhattung-212121051214</p>
+    <p>luunhattung-212121051214</p>
+    <p>Hello World!</p>
+    <p>These paragraphs are styled with CSS.</p>
+  </body>
+</html>
