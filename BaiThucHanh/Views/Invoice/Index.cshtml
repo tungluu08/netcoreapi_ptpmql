@@ -1,0 +1,28 @@
+@model BaiThucHanh.Models.InvoiceModel
+
+@{
+    ViewBag.Title = "Tính Tiền Hóa Đơn";
+}
+
+<h2>Tính Tiền Hóa Đơn</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <label>Số Lượng:</label>
+        @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Đơn Giá:</label>
+        @Html.TextBoxFor(m => m.UnitPrice, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Tính Tổng</button>
+
+    @if (ViewBag.TotalPrice != null)
+    {
+        <h3>Tổng Tiền: @ViewBag.TotalPrice VND</h3>
+    }
+}

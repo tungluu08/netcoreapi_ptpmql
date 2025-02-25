@@ -1,0 +1,34 @@
+@model BaiThucHanh.Models.GradeModel
+
+@{
+    ViewBag.Title = "Tính Điểm Môn Học";
+}
+
+<h2>Tính Điểm Môn Học</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <label>Điểm A:</label>
+        @Html.TextBoxFor(m => m.A, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Điểm B:</label>
+        @Html.TextBoxFor(m => m.B, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Điểm C:</label>
+        @Html.TextBoxFor(m => m.C, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Tính Điểm</button>
+
+    @if (ViewBag.FinalScore != null)
+    {
+        <h3>Điểm Tổng: @ViewBag.FinalScore</h3>
+        <h3>Xếp Loại: @ViewBag.Grade</h3>
+    }
+}

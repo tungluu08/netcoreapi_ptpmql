@@ -1,0 +1,29 @@
+@model BaiThucHanh.Models.BMIModel
+
+@{
+    ViewBag.Title = "Tính chỉ số BMI";
+}
+
+<h2>Tính chỉ số BMI</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Height, "Chiều cao (cm)")
+        @Html.TextBoxFor(m => m.Height, new { @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Weight, "Cân nặng (kg)")
+        @Html.TextBoxFor(m => m.Weight, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tính BMI</button>
+}
+
+@if (ViewBag.BMI != null)
+{
+    <h3>Kết quả:</h3>
+    <p>BMI của bạn là: @ViewBag.BMI</p>
+    <p>@ViewBag.BMIResult</p>
+}
