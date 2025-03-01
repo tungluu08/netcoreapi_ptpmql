@@ -1,10 +1,18 @@
-namespace MvcMovie.Models
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace MvcMovie.Models;
+public interface IPerson
 {
-    public class Person
-    {
-        public int PersonId { get; set; }
-        public string FullName { get; set; }
-        public string Address { get; set; }
-        
-    }
+    string PersonId { get; set; }
+    string FullName { get; set; }
+    string? Address { get; set; }
+}
+
+[Table("Persons")]
+public class Person : IPerson
+{
+    [Key]
+    public required string PersonId { get; set; }
+    public required string FullName { get; set; }
+    public string? Address { get; set; }
 }
