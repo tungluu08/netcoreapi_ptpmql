@@ -353,3 +353,12 @@ E:\NetcoreAPI\DemoMVC\MvcMovie\obj\Debug\net9.0\refint\MvcMovie.dll
 E:\NetcoreAPI\DemoMVC\MvcMovie\obj\Debug\net9.0\MvcMovie.pdb
 E:\NetcoreAPI\DemoMVC\MvcMovie\obj\Debug\net9.0\MvcMovie.genruntimeconfig.cache
 E:\NetcoreAPI\DemoMVC\MvcMovie\obj\Debug\net9.0\ref\MvcMovie.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+E:\NetcoreAPI\DemoMVC\MvcMovie\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
